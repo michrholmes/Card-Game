@@ -1,0 +1,52 @@
+//***************************************************************************************
+// CardGame.java            Author: Michelle Holmes  
+//
+// Program creates Card objects and deals random cards displaying their face and suit.
+//***************************************************************************************
+
+public class CardGame 
+{	
+	//---------------------------------------------------------------------------------
+	// Driver program using the Card class. Creates five Card objects, shuffles them and
+	// displays the five cards face and suit. 
+	//---------------------------------------------------------------------------------
+
+	public static void main(String[] args) 
+	{ 
+
+		Card card1 = new Card();
+		Card card2 = new Card();		// Instantiation of 5 new Card objects.
+		Card card3 = new Card();
+		Card card4 = new Card();
+		Card card5 = new Card();
+		
+		System.out.println("Lets Play a Card Game!");   		// Statement to start game.
+		System.out.println("The card on the top of the deck is: ");
+		
+		
+		System.out.println(card1);  // Displays the top cards initial face and suit before
+									// cards are shuffled.
+		System.out.println("");
+		System.out.println("Now the dealer will shuffle the deck and deal " + 
+		"5 random cards as follows: ");
+		System.out.println("");
+		
+		card1.shuffle();
+		card2.shuffle();		// The 5 card objects call on the shuffle() method to create
+		card3.shuffle();		// the random face and suite combinations to simulate	
+		card4.shuffle();		// shuffling a deck of cards.
+		card5.shuffle();
+		
+		System.out.println(card1);
+		System.out.println(card2);		// Each cards current face and suite is then displayed
+		System.out.println(card3);		// utilizing the toString() method.
+		System.out.println(card4);
+		System.out.println(card5);
+		
+		System.out.println("");
+		System.out.println("Thanks for playing!"); 	// Denotes end of the game. 
+		
+		
+	}
+
+}
